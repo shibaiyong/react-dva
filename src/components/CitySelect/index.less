@@ -1,0 +1,110 @@
+@vm: 100vw/375;
+.clSearchComponent {
+    @vm: 100vw/375;
+    padding-bottom: 50 * @vm;
+    background: #fff;
+    .box div {
+      color: #000;
+      font-size: 15 * @vm;
+      position: relative;
+    }
+    .cityCheck{
+      color: #23c68b;
+      position: absolute;
+      right: 35 * @vm;;
+      top: 12 * @vm;;
+    }
+    .section>.title {
+      padding: 0 10 * @vm;
+      height: 30 * @vm;
+      line-height: 30 * @vm;
+      background: #f5f6f6;
+      font-size: 12 * @vm;
+      color: #777;
+    }
+    .section>.box {
+      padding: 0 10 * @vm;
+    }
+    .section>.grid {
+      padding: 10 * @vm 10 * @vm 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .grid>div {
+      width: 80 * @vm;
+      text-align: center;
+      margin-bottom: 10 * @vm;
+      // word-wrap:;
+    }
+    .line>div {
+      height: 52 * @vm;
+      line-height: 52 * @vm;
+      border-top: 1 * @vm solid #f0f0f0;
+      color:#777;
+      &:first-child{
+        border-top:none
+      }
+    }
+    .nonius {
+      width: 22 * @vm;
+      padding-top: 8* @vm;
+      padding-bottom: 8* @vm;
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #ccc;
+      color:#fff;
+      flex-direction: column;
+      border-top-left-radius: 25px;
+      border-top-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+      right: 10 * @vm;
+      font-size: 12 * @vm;
+      z-index: 999;
+    }
+    .nonius>div {
+      width: 100%;
+      text-align: center;
+      display: block;
+      height: 18 * @vm;
+    }
+    .icon-local {
+      width: 11 * @vm;
+      height: 16 * @vm;
+      pointer-events: none;
+    }
+    .keys-item {
+      display: block;
+      height: 20 * @vm;
+      width: 100%;
+      text-align: center;
+      font-size: 13 * @vm;
+      &>img {
+        width: 60%;
+        margin-bottom: 5px;
+      }
+    }
+    .on-select {
+      width: 50 * @vm;
+      border-radius: 5 * @vm;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      background: rgba(0, 0, 0, .5);
+      text-align: center;
+      padding: 10px;
+      z-index: 99;
+      font-size: 24 * @vm;
+      font-weight: 600;
+      line-height: 30 * @vm;
+    }
+  }

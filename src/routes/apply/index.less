@@ -1,0 +1,39 @@
+@import '../app.less';
+@rex : 1rem/75;
+:global {
+    .apply-list{
+        
+        padding-bottom: 60px;
+    }
+    .apply-main{
+        background: #fff;
+        .apply-item{
+            position: relative;
+            .border-bottom(#e6e6e6,1px);
+        }
+        a{
+            display: flex;
+            box-sizing: border-box;
+            height: 110*@rex;
+            align-items: center;
+            padding: 15px 10px;
+        }
+        .apply-img{
+            flex-basis: 60*@rex;
+            margin-right: 20*@rex;
+            margin-left: 10*@rex;
+            img{
+                width: 100%;
+            }
+        }
+        .apply-name{
+            flex: 1;
+            color: #333;
+            font-size: 14px;
+        }
+        .apply-icon{
+            flex-basis: 30@rex;
+            color: #9b9b9b
+        }
+    }
+}
