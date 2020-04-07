@@ -21,7 +21,7 @@ export default modelExtend(pageModel, {
         city_list: [],
         city_name: '',
         district: '',
-        isAlert:true
+        isAlert:false
     },
     subscriptions: {
         setup({ dispatch, history }) {
@@ -31,21 +31,21 @@ export default modelExtend(pageModel, {
                         type: 'fetchMarket'
                     })
 
-                    testCORSS().then( res => {
-                        if(res.isShow == 'true'){
-                            dispatch({
-                                type: 'getStatus',
-                                isAlert: true
-                            })
-                        }else{
-                            dispatch({
-                                type: 'getStatus',
-                                isAlert: false
-                            })
-                        }
-                    }).catch(err=>{
-                        console.log(err)
-                    })
+                    // testCORSS().then( res => {
+                    //     if(res.isShow == 'true'){
+                    //         dispatch({
+                    //             type: 'getStatus',
+                    //             isAlert: true
+                    //         })
+                    //     }else{
+                    //         dispatch({
+                    //             type: 'getStatus',
+                    //             isAlert: false
+                    //         })
+                    //     }
+                    // }).catch(err=>{
+                    //     console.log(err)
+                    // })
                 }
             })
         },
