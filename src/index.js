@@ -1,8 +1,6 @@
 //import { notification } from 'antd'
 import dva from 'dva'
 import createLoading from 'dva-loading'
-
-
 const app = dva({
     ...createLoading({
         effects: true,

@@ -26,11 +26,19 @@ const Recomends = ({
         }, {})
         return Object.assign({}, position, newpos)
     }
+
+    function fluentCardType(name, order){
+        window.zhuge.track('clickcardtype',{
+            name,order
+        })
+    }
+
+
     const { postion11, postion12, postion13, postion21, postion22, postion23 } = getPositon(recomends)
     return (
         <Card full className='amCardFull'>
             <Card.Header
-                title={<span className='card-title'><i></i>今日推荐</span>}
+                title={<span className='card-title' onClick={fluentCardType.bind(this,'todayrecommend','1')}><i></i>今日推荐</span>}
                 extra={<span className='extra' onClick={() => setlocation('apply')}>申请进度查询<Icon type="right" /></span>}
             />
             <Card.Body className='amCardBody'>

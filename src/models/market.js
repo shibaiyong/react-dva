@@ -31,6 +31,11 @@ export default modelExtend(pageModel, {
                         type: 'fetchMarket'
                     })
 
+                    window.zhuge.identify('2222333', {
+                        name: '张四2',
+                        'industry': 'IT6'
+                      });
+
                     // testCORSS().then( res => {
                     //     if(res.isShow == 'true'){
                     //         dispatch({

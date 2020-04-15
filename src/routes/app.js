@@ -7,6 +7,8 @@ import '../themes/index.less'
 import './app.less'
 import 'nprogress/nprogress.css'
 
+import '../utils/zhugeiosdk.js'
+
 let lastHref
 
 function App({ children, app, history}) {

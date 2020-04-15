@@ -5,16 +5,19 @@ import config from '../../utils/config'
 import { getZhugeioMethod } from '../../utils/native'
 const {api: {imgdownload}} = config
 
-
-
 const HotCard = ({
     hotcards,
     setlocation
 }) => {
+    function fluentCardType(name, order){
+        window.zhuge.track('clickcardtype',{
+            name,order
+        })
+    }
     return (
         <Card full className='hot-card'>
         <Card.Header
-            title={<span className='card-title' ><i></i>
+            title={<span className='card-title' onClick={fluentCardType.bind(this,'hotcard','1')}><i></i>
             热卡推荐</span>}
             extra={<span className='extra' onClick={() => {
 
