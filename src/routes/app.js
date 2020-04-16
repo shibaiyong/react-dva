@@ -11,6 +11,8 @@ import '../utils/zhugeiosdk.js'
 
 let lastHref
 
+//app 是dva构造的对象的app数据模块models/app。children 是APP的子路由。 history 是dva构造对象app.router.history的属性,猜测是用来做路由跳转的
+
 function App({ children, app, history}) {
     const {
         theme
@@ -27,7 +29,7 @@ function App({ children, app, history}) {
             <script src='./flexible.js'></script>
             <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
         </Helmet>,
-        <div key='1'  >{children}</div>
+        <div key='1'>{children}</div>
     ]
 }
 
