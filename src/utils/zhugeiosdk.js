@@ -47,6 +47,6 @@
        zgsee:false,        //视屏采集开关, 默认为false
        autoTrack: false,    //启用全埋点采集（选填，默认false）            
        singlePage: false,   //是否是单页面应用（SPA），启用autoTrack后生效（选填，默认false）  
-       debug:true        //实时调试的时候开启，方便检查埋点效果。调试结束后应立即关闭，防止产生大量无用数据。
+       debug:false        //实时调试的时候开启，方便检查埋点效果。调试结束后应立即关闭，防止产生大量无用数据。
     });
 })()
