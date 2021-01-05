@@ -4,7 +4,7 @@
   "dependencies": {
     "antd": "3.2.2",
     "antd-mobile": "^2.2.3",
-    "axios": "^0.17.1",
+    "axios": "^0.21.1",
     "cssnano": "^4.1.0",
     "dva": "2.1.0",
     "dva-loading": "^1.0.4",
